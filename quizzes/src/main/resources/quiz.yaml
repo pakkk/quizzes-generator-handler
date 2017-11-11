@@ -1,0 +1,146 @@
+swagger: '2.0'
+host: localhost:8080
+basePath: /api
+x-generator-properties:
+  business-unit: mybu
+schemes:
+ - http
+consumes:
+ - application/json
+produces:
+ - application/json
+info:
+  version: 1.0.0
+  title: JavaQuiz-API
+  description: Java Quiz API
+  contact:
+    name: Francisco Manuel Benitez Chico
+    email: paco.benitez.chico@gmail.com
+    url: http://www.pacobenitezchico.com
+paths:
+  /deauthenticate:
+    post:
+      operationId: deauthenticate
+      responses:
+        - 200:
+            description: OK
+  /authenticate:
+    post:
+      operationId: authenticate
+      parameters:     
+        - $ref: '#/parameters/username'
+        - $ref: '#/parameters/password'
+      responses:
+        - 200:
+            description: OK
+  /quiz:
+    parameters:
+      - $ref: '#/parameters/candidate'
+    get:
+      operationId: generateQuiz
+      responses:
+        - 200:
+            description: generate a new quiz
+            schema:
+              type: array
+              items:
+                $ref: '#/definitions/Quiz'
+    post:
+      parameters:
+        - name: quiz
+          in: body
+          description: The quiz
+          required: true
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Quiz'
+      operationId: storeQuiz
+      responses:
+        - 200:
+            description: OK
+    put:
+      operationId: checkQuiz
+      responses:
+        - 200:
+            description: check an existing quiz
+            schema:
+              type: array
+              items:
+                $ref: '#/definitions/Quiz'
+    patch:
+      operationId: rememberQuiz
+      responses:
+        - 200:
+            description: remember an existing quiz
+            schema:
+              type: array
+              items:
+                $ref: '#/definitions/Quiz'
+  /answers:
+    get:
+      operationId: fullAnswers
+      responses:
+        - 200:
+            description: all the answers
+            schema:
+              type: array
+              items:
+                $ref: '#/definitions/Quiz'
+  /answers/{answerId}:
+    parameters:
+      - name: answerId
+        in: path
+        description: The answer identifier
+        required: true
+        type: integer  
+    get:
+      operationId: specificAnswer
+      responses:
+        - 200:
+            description: all the answers
+            schema:
+              type: array
+              items:
+                $ref: '#/definitions/Quiz'
+################################################################################
+#                                   Parameters                                 #
+################################################################################
+parameters:
+  username:
+    name: username
+    in: query
+    description: the username
+    required: true
+    type: string
+  password:
+    name: password
+    in: query
+    description: the password
+    required: true
+    type: string
+  candidate:
+    name: candidate
+    in: query
+    description: the candidate
+    required: true
+    type: string
+################################################################################
+#                                 Definitions                                  #
+################################################################################
+definitions:
+  Quiz:
+    type: object
+    properties:
+      identifier:
+        type: string
+        description: This is the question identifier
+      type:
+        type: string
+        description: This is the HTML type
+      question:
+        type: string
+        description: This is the question
+      answer:
+        type: string
+        description: This is the answer

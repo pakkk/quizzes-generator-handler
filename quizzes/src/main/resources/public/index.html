@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<!--
+  ~ "Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements; and to You under the Apache License, Version 2.0. "
+  -->
+<head>
+	<title>Rest tester!</title>
+	<link rel="icon" href="images/favicon.png">
+	<link rel="stylesheet" href="css/external/bootstrap/bootstrap.css">
+	<link rel="stylesheet" href="css/example/example-fonts.css">
+	<link rel="stylesheet" href="css/example/example.css">
+
+	<script src="js/external/es6-promise/es6-promise.js"></script>
+	<script src="js/external/jquery/jquery.js"></script>
+	<script src="js/external/rx/rx.js"></script>
+	<script src="js/generated/utils/RandomValues.js"></script>
+	<script src="js/generated/utils/ParserValues.js"></script>
+	<script src="js/generated/utils/SchemesValues.js"></script>
+	<script src="js/generated/utils/CommonException.js"></script>
+	<script src="js/generated/model/Quiz_1.0.0.js"></script>
+	<script src="js/generated/rest/RestHandler_1.0.0.js"></script>
+	<script src="js/generated/rest/RestListener_1.0.0.js"></script>
+
+</head>
+
+<body>
+	<div class="container">
+		<form role="form">
+			<div class="row">
+				<div class="col-md-4">
+					<fieldset>
+						<legend>
+							<h3>
+							Select the operations to be tested
+							</h3>
+						</legend>
+						<div class="checkbox checkbox-success">
+							<input id="checkerUnchecker" type="checkbox"/>
+							<label for="checkbox3">
+								Select all
+							</label>
+						</div>						
+						<div class="checkbox checkbox-success">
+							<input id="fullAnswers" type="checkbox" class="myCheckBox" onclick="updateOperationsSelected('fullAnswers')"/>
+							<label for="checkbox3">
+								fullAnswers
+							</label>
+						</div>
+						<div class="checkbox checkbox-success">
+							<input id="setAdminKey" type="checkbox" class="myCheckBox" onclick="updateOperationsSelected('setAdminKey')"/>
+							<label for="checkbox3">
+								setAdminKey
+							</label>
+						</div>
+						<div class="checkbox checkbox-success">
+							<input id="existsCandidate" type="checkbox" class="myCheckBox" onclick="updateOperationsSelected('existsCandidate')"/>
+							<label for="checkbox3">
+								existsCandidate
+							</label>
+						</div>
+						<div class="checkbox checkbox-success">
+							<input id="specificAnswer" type="checkbox" class="myCheckBox" onclick="updateOperationsSelected('specificAnswer')"/>
+							<label for="checkbox3">
+								specificAnswer
+							</label>
+						</div>
+						<div class="checkbox checkbox-success">
+							<input id="generateQuiz" type="checkbox" class="myCheckBox" onclick="updateOperationsSelected('generateQuiz')"/>
+							<label for="checkbox3">
+								generateQuiz
+							</label>
+						</div>
+						<div class="checkbox checkbox-success">
+							<input id="rememberQuiz" type="checkbox" class="myCheckBox" onclick="updateOperationsSelected('rememberQuiz')"/>
+							<label for="checkbox3">
+								rememberQuiz
+							</label>
+						</div>
+						<div class="checkbox checkbox-success">
+							<input id="storeQuiz" type="checkbox" class="myCheckBox" onclick="updateOperationsSelected('storeQuiz')"/>
+							<label for="checkbox3">
+								storeQuiz
+							</label>
+						</div>
+						<div class="checkbox checkbox-success">
+							<input id="checkQuiz" type="checkbox" class="myCheckBox" onclick="updateOperationsSelected('checkQuiz')"/>
+							<label for="checkbox3">
+								checkQuiz
+							</label>
+						</div>
+						<legend></legend>
+						<legend>
+							<h4>Load some file if you have form-data</h4>
+						</legend>
+						<div class="btn btn-warning">
+							<input type="file" name="myFile" id="myFile"/>
+						</div>
+						<legend></legend>
+						<a class="btn btn-success" onclick="startTest();">Run!</a>
+					</fieldset>
+				</div>
+			</div>
+		</form>
+	</div>
+	<legend></legend>
+	<div id="result">
+	
+	</div>
+	
+	<script src="js/external/jquery/jquery.js"></script>
+	<script src="js/external/bootstrap/bootstrap.js"></script>
+	<script src="js/example/ExampleTester_1.0.0.js"></script>
+
+	<script>
+		$(function() { initialize() }) ;
+	</script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+[
+    {
+        "_class"  : "com.pacobenitezchico.quizzes.domain.UserDto",
+		"username": "fbenitez",
+		"password": "myPass",
+		"admin"   : true
+	}
+]

@@ -1,0 +1,107 @@
+[
+    {
+        "_class": "com.pacobenitezchico.quizzes.domain.QuizDto",
+		"type": "Array Question",
+		"input": "radiobutton",
+        "question": "int x[] = new int[]{10,20,30}; Arrays can also be created and initialize as in above statement.",
+        "answer": "True"
+    },
+    {
+        "_class": "com.pacobenitezchico.quizzes.domain.QuizDto",
+		"type": "Constructor Question",
+        "input": "radiobutton",
+        "question": "In an instance method or a constructor, 'this' is a reference to the current object.",
+        "answer": "True"
+    },
+    {
+        "_class": "com.pacobenitezchico.quizzes.domain.QuizDto",
+		"type": "Garbage Collectors",
+        "input": "radiobutton",
+        "question": "Garbage Collection is manual process.",
+		"answer": "False"
+    },
+    {
+        "_class": "com.pacobenitezchico.quizzes.domain.QuizDto",
+		"type": "Garbage Collectors",
+        "input": "radiobutton",
+        "question": "The JRE deletes objects when it determines that they are no longer being used. This process is called Garbage Collection.",
+		"answer": "True"
+    },
+    {
+        "_class": "com.pacobenitezchico.quizzes.domain.QuizDto",
+		"type": "Constructor Question",
+        "input": "radiobutton",
+        "question": "Constructor overloading is not possible in Java.",
+		"answer": "False"
+    },
+    {
+        "_class": "com.pacobenitezchico.quizzes.domain.QuizDto",
+		"type": "Assignment Question",
+        "input": "radiobutton",
+        "question": "Assignment operator is evaluated Left to Right.",
+		"answer": "False"
+    },
+    {
+        "_class": "com.pacobenitezchico.quizzes.domain.QuizDto",
+		"type": "Operator Question",
+        "input": "radiobutton",
+        "question": "All binary operators except for the assignment operators are evaluated from Left to Right",
+		"answer": "True"
+    },
+    {
+        "_class": "com.pacobenitezchico.quizzes.domain.QuizDto",
+		"type": "General Question",
+        "input": "radiobutton",
+        "question": "Java programming is not statically-typed, means all variables should not first be declared before they can be used.",
+		"answer": "False"
+    },
+	{
+        "_class": "com.pacobenitezchico.quizzes.domain.QuizDto",
+		"type": "Garbage Collectors",
+        "input": "radiobutton",
+        "question": "In Java SE 7 and later, underscore characters '_' can appear anywhere between digits in a numerical literal",
+		"answer": "True"
+	},
+    {
+        "_class": "com.pacobenitezchico.quizzes.domain.QuizDto",
+		"type": "Garbage Collectors",
+        "input": "radiobutton",
+        "question": "Variable name can begin with a letter, '$', or '_'.",
+		"answer": "True"
+	},
+    {
+        "_class": "com.pacobenitezchico.quizzes.domain.QuizDto",
+		"type": "Garbage Collectors",
+        "input": "radiobutton",
+        "question": "Interfaces can be instantiated.",
+		"answer": "False"
+	},
+    {
+        "_class": "com.pacobenitezchico.quizzes.domain.QuizDto",
+		"type": "Garbage Collectors",
+        "input": "radiobutton",
+        "question": "The modifiers public and static cannot written in either order 'public static' or 'static public'.",
+		"answer": "False"
+	},
+    {
+        "_class": "com.pacobenitezchico.quizzes.domain.QuizDto",
+		"type": "Garbage Collectors",
+        "input": "radiobutton",
+        "question": "A .class file contains bytecodes?",
+		"answer": "True"
+	},
+    {
+        "_class": "com.pacobenitezchico.quizzes.domain.QuizDto",
+		"type": "Garbage Collectors",
+        "input": "radiobutton",
+        "question": "James Gosling is father of Java?",
+		"answer": "True"
+	},
+    {
+        "_class": "com.pacobenitezchico.quizzes.domain.QuizDto",
+		"type": "Garbage Collectors",
+        "input": "radiobutton",
+        "question": "Java technology is both a programming language and a platform.",
+		"answer": "True"
+	}
+]
